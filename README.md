@@ -19,6 +19,7 @@ cargo build
 ```shell
 [ Create new todo:                     create ]
 [ View all todos:                        list ]
+[ Revert from select mode:               back ]
 [ Select a todo:                  select <ID> ]
 [ Show todo information (select mode):   show ]
 [ Update a todo (select mode):         update ]
