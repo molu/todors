@@ -87,7 +87,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_create_todo() {
+    fn can_create_todo() {
         let todo = Todo::new(
             "Test title".to_string(),
             "Test description".to_string(),
@@ -101,7 +101,7 @@ mod tests {
     }
 
     #[test]
-    fn test_start_todo() {
+    fn can_start_todo() {
         let mut todo = Todo::new(
             "Test title".to_string(),
             "Test description".to_string(),
@@ -114,7 +114,7 @@ mod tests {
     }
 
     #[test]
-    fn test_complete_todo() {
+    fn can_complete_started_todo() {
         let mut todo = Todo::new(
             "Test title".to_string(),
             "Test description".to_string(),
@@ -127,7 +127,7 @@ mod tests {
     }
 
     #[test]
-    fn test_complete_not_started_todo() {
+    fn cannot_complete_not_started_todo() {
         let mut todo = Todo::new(
             "Test title".to_string(),
             "Test description".to_string(),
