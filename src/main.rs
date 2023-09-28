@@ -152,7 +152,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                 if scope != "select" {
                     println!("Not in select mode");
                 } else {
-                    todos[current_todo_idx].status = Status::InProgress;
+                    todos[current_todo_idx].start();
                 }
             }
             &"update" => {
@@ -210,7 +210,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                 if scope != "select" {
                     println!("Not in select mode");
                 } else {
-                    todos[current_todo_idx].status = Status::Completed;
+                    todos[current_todo_idx].complete();
                 }
             }
             &"delete" => {
